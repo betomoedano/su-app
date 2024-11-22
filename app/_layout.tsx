@@ -17,10 +17,10 @@ import { customDarkTheme, customLightTheme } from '~/style/colors';
 
 SplashScreen.preventAutoHideAsync();
 
-// SplashScreen.setOptions({
-//   duration: 500,
-//   fade: true,
-// });
+SplashScreen.setOptions({
+  duration: 500,
+  fade: true,
+});
 
 export default function RootLayout() {
   const theme = useColorScheme() === 'dark' ? customDarkTheme : customLightTheme;

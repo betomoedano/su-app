@@ -28,10 +28,10 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
         backgroundColor: '#fafafa',
         image: './assets/splash-dark-icon.png',
         imageWidth: 100,
-        // dark: {
-        //   image: './assets/splash-icon.png',
-        //   backgroundColor: '#18181b',
-        // },
+        dark: {
+          image: './assets/splash-icon.png',
+          backgroundColor: '#18181b',
+        },
       },
     ],
   ],
@@ -43,11 +43,6 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   icon: './assets/icon.png',
   userInterfaceStyle: 'automatic',
   newArchEnabled: true,
-  // splash: {
-  //   image: './assets/splash.png',
-  //   resizeMode: 'cover',
-  //   backgroundColor: '#FAFAFA',
-  // },
   assetBundlePatterns: ['**/*'],
   ios: {
     supportsTablet: true,
@@ -55,16 +50,6 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     config: {
       usesNonExemptEncryption: false,
     },
-    // splash: {
-    //   image: './assets/splash.png',
-    //   resizeMode: 'cover',
-    //   backgroundColor: '#FAFAFA',
-    //   dark: {
-    //     image: './assets/splash-dark.png',
-    //     resizeMode: 'cover',
-    //     backgroundColor: '#18181B',
-    //   },
-    // },
   },
   android: {
     adaptiveIcon: {
@@ -72,16 +57,6 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       backgroundColor: '#ffffff',
     },
     package: 'dev.codewithbeto.universe',
-    // splash: {
-    //   image: './assets/splash.png',
-    //   resizeMode: 'cover',
-    //   backgroundColor: '#FAFAFA',
-    //   dark: {
-    //     image: './assets/splash-dark.png',
-    //     resizeMode: 'cover',
-    //     backgroundColor: '#18181B',
-    //   },
-    // },
   },
   extra: {
     router: {
